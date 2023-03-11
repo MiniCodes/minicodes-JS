@@ -4,7 +4,7 @@
         <title></title>
 
         <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Caveat:wght@400;500;600;700&family=Handlee&family=Homemade+Apple&family=Kalam&family=Marck+Script&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="../../style.css">
     </head>
 
     <body>
@@ -12,16 +12,30 @@
             <div class="container">
                 <nav>
                     <ul>
-                        <li><a href="../index.html">Home</a></li>
-                        <li><a href="../Math/Math Calculator/mathcal.html">Math Calculator!</a></li>
-                        <li><a href="">Thing</a></li>
+                        <li><a href="../../index.html">Home</a></li>
+                        <li><a href="../../Math/Math Calculator/mathcal.html">Math Calculator!</a></li>
+                        <li><a href="math.html">Basic Math</a></li>
                         <li><a href="">Another Thing</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
 
+        <p>Time for some basic math!</p>
+                    
+        <p>
+            Enter your favorite number & click the button to 
+            do some basic math.
+        </p>
 
-        <script src=""></script>
+        <input id="favNumber" type="number">
+
+        <button type="button" onclick="PrintMath()">
+            Test it!
+        </button>
+
+        <p id="math"></p>
+
+        <script src="math.js"></script>
     </body>
 </html>
