@@ -1,6 +1,6 @@
 /* container for nav bar */
 .container{
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -31,7 +31,7 @@ nav ul{
 /* Positions nav li */
 nav li{
     display: inline-block;
-    margin-left: 70px;
+    margin-left: 55px;
     padding-top: 15px;
     padding-bottom: 15px;
 
