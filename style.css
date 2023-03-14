@@ -99,9 +99,15 @@ h3 {
 p {
     font-family: 'Handlee', cursive;
     text-align: center;
+    font-size: 18px;
 }
 
 /* Positions the input for Math Loop page */
 .mathloopinput {
+    text-align: center;
+}
+
+/* Positions buttons & paragraph for Game page */
+.Randopara-buttons {
     text-align: center;
 }
