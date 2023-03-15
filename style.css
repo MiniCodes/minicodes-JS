@@ -121,6 +121,37 @@ input {
 
 
 
+/* Centers button for class information page */
+.classinfo {
+    text-align: center;
+}
+
+/* Sizes font for Class Info button */
+.classinfo button {
+    font-size: 15px;
+}
+
+/* Styles class information content */
+.printed-classinfo {
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 600;
+    color: #71808ac3;
+}
+
+
+/* Centers the input & button for Names page */
+.name-input {
+    text-align: center;
+}
+
+/* Centers button for color page */
+.colors-button {
+    text-align: center;
+}
+
+
+
 /* Positions the input for Math Loop page */
 .mathloopinput {
     text-align: center;
