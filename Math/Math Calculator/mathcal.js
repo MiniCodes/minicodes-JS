@@ -85,3 +85,15 @@ function CalDivide() {
         firstCalNum / secondCalNum;
     }
 }
+
+
+
+// function to display value of calculator buttons
+function display(val) {
+    document.getElementById("calResults").value += val
+}
+
+// function to solve equation in button calculator
+function solve() {
+    calResults.value = eval(calResults.value)
+}

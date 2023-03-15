@@ -73,6 +73,8 @@ nav a:hover::before{
     width: 100%;
 }
 
+
+
 head{
     background: #f6f9fa;
 }
@@ -93,6 +95,7 @@ h1 {
 h3 {
     font-family: 'Marck Script', cursive;
     font-size: 24px;
+    text-align: center;
 }
 
 /* Styles paragraphs in general */
@@ -102,6 +105,22 @@ p {
     font-size: 18px;
 }
 
+/* Styles all buttons */
+button {
+    font-family: 'Handlee', cursive;
+    font-weight: 600;
+    font-style: italic;
+    color: #8496a2;
+}
+
+/* Styles all Inputs */
+input {
+    font-family: 'Handlee', cursive;
+    font-size: 14px;
+}
+
+
+
 /* Positions the input for Math Loop page */
 .mathloopinput {
     text-align: center;
@@ -110,4 +129,127 @@ p {
 /* Positions buttons & paragraph for Game page */
 .Randopara-buttons {
     text-align: center;
+}
+
+/* Positions content for Basic Math Page */
+.math-content {
+    text-align: center;
+}
+
+
+
+/* Displays the grid for the calculators
+on the Math Calculator page */
+.group-calculators {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+}
+
+/* Styles the paragraphs for the Math
+Calculator */
+.math-calculator p {
+    font-size: 16px;
+}
+
+/* Styles the inputs for the Math 
+Calculator */
+.calinputs {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* Styles the labels for the Math Calculator
+inputs */
+.calinputs p {
+    font-weight: 600;
+    font-style: italic;
+    font-size: 14px;
+}
+
+/* Styles the buttons for the Math Calculator */
+.calbuttons {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+
+/* Centers text for button calculator */
+.button-calculator {
+    text-align: center;
+}
+
+/* Creates & Styles the grid for the calculator
+under the button calculator */
+.calculator {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 15px;
+}
+
+/* Sizes the text next to the button calculator */
+.calculator p {
+    font-size: 17px;
+}
+
+/* Creates the rows/row spacing for the button 
+calculator */
+.calrows {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    row-gap: 3px;
+}
+
+/* Creates grid for row 1 of button 
+calculator */
+.calrow1 {
+    width: 40%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 3px;
+}
+
+/* Styles input to span 1 through 3 of the 
+4 spaces in the grid */
+.calrow1 input[type=text] {
+    grid-column-start: 1;
+    grid-column-end: span 3;
+}
+
+/* Creates grid for row 2 of button
+calculator */
+.calrow2 {
+    width: 40%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 3px;
+}
+
+/* Creates grid for row 3 of button
+calculator */
+.calrow3 {
+    width: 40%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 3px;
+}
+
+/* Creates grid for row 4 of button
+calculator */
+.calrow4 {
+    width: 40%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 3px;
+}
+
+/* Creates grid for row 5 of button
+calculator */
+.calrow5 {
+    width: 40%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 3px;
 }

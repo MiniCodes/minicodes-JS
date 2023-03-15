@@ -29,58 +29,124 @@
 
         <h1>The Math Calculator!</h1>
         
-        <h3>Math Calculator</h3>
+        <div class="group-calculators">
+            <div class="math-calculator">
+                <h3>Math Calculator</h3>
 
-        <p>
-            Enter your two favorite numbers below & click the
-            buttons below to calculate.
-        </p>
+                <p>
+                    Enter your two favorite numbers below & click the
+                    buttons below to calculate.
+                </p>
 
-        <div class="calinputs">
-            <div class="calinput1">
-                <p>First Number:</p>
-                <input type="number" id="calInput1">
+                <div class="calinputs">
+                    <div class="calinput1">
+                        <p>First Number:</p>
+                        <input type="number" id="calInput1">
+                    </div>
+
+                    <div class="calinput2">
+                        <p>Second Number:</p>
+                        <input type="number" id="calInput2">
+                    </div>
+                </div>
+
+                <br><br><br>
+
+                <div class="calbuttons">
+                    <div class="caladd">
+                        <button type="button" onclick="CalAdd()">
+                            Addition
+                        </button>
+                    </div>
+                    
+                    <div class="calsub">
+                        <button type="button" onclick="CalSub()">
+                            Subtraction
+                        </button>
+                    </div>
+
+                    <div class="calmultiply">
+                        <button type="button" onclick="CalMultiply()">
+                            Multiply
+                        </button>
+                    </div>
+
+                    <div class="caldivide">
+                        <button type="button" onclick="CalDivide()">
+                            Division
+                        </button>
+                    </div>
+                </div>
+
+                <br>
+
+                <p id="calProduct"></p>
+
+                <p id="testP"></p>
             </div>
 
-            <div class="calinput2">
-                <p>Second Number:</p>
-                <input type="number" id="calInput2">
+
+            <div class="button-calculator">
+                <h3>Button ~ Math Calculator</h3>
+
+                <div class="calculator">
+                    <p>
+                        Use this as a regular calculator :3
+                        <br><br> Both of these calculators do the same things,
+                        only this one uses buttons to work. <br> Though you can
+                        also type in the input box.
+                    </p>
+
+                    <div class="calrows">
+                        <div class="calrow1">
+                            <input type="text" id="calResults">
+    
+                            <input type="button" value="c" onclick="calResults.value = ''">
+                        </div>
+    
+                        <div class="calrow2">
+                            <input type="button" value="1" onclick="display('1')">
+    
+                            <input type="button" value="2" onclick="display('2')">
+    
+                            <input type="button" value="3" onclick="display('3')">
+    
+                            <input type="button" value="+" onclick="display('+')">
+                        </div>
+                        
+                        <div class="calrow3">
+                            <input type="button" value="4" onclick="display('4')">
+    
+                            <input type="button" value="5" onclick="display('5')">
+    
+                            <input type="button" value="6" onclick="display('6')">
+    
+                            <input type="button" value="-" onclick="display('-')">
+                        </div>
+    
+                        <div class="calrow4">
+                            <input type="button" value="7" onclick="display('7')">
+                            
+                            <input type="button" value="8" onclick="display('8')">
+    
+                            <input type="button" value="9" onclick="display('9')">
+    
+                            <input type="button" value="/" onclick="display('/')">
+                        </div>
+    
+                        <div class="calrow5">
+                            <input type="button" value="." onclick="display('.')">
+    
+                            <input type="button" value="0" onclick="display('0')">
+    
+                            <input type="button" value="=" onclick="solve()">
+    
+                            <input type="button" value="*" onclick="display('*')">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-
-        <br><br><br>
-
-        <div class="calbuttons">
-            <div class="caladd">
-                <button type="button" onclick="CalAdd()">
-                    Addition
-                </button>
-            </div>
-            
-            <div class="calsub">
-                <button type="button" onclick="CalSub()">
-                    Subtraction
-                </button>
-            </div>
-
-            <div class="calmultiply">
-                <button type="button" onclick="CalMultiply()">
-                    Multiply
-                </button>
-            </div>
-
-            <div class="caldivide">
-                <button type="button" onclick="CalDivide()">
-                    Division
-                </button>
-            </div>
-        </div>
-
-        <br>
-
-        <p id="calProduct"></p>
-
-        <p id="testP"></p>
 
         <script src="mathcal.js"></script>
     </body>
