@@ -7,6 +7,7 @@
 /* Nav bar color */
 header{
     background: #d4d7c4;
+    border-radius: 9px;
 }
 
 /* float fix for nav bar */
@@ -32,8 +33,8 @@ nav ul{
 nav li{
     display: inline-block;
     margin-left: 55px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 
     position: relative;
 }
@@ -45,7 +46,7 @@ nav a{
     font-family: 'Handlee', cursive;
     /*text-transform: uppercase;*/
     font-weight: 600;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 /* Gives nav links darker color when hovering over */
@@ -73,6 +74,82 @@ nav a:hover::before{
     width: 100%;
 }
 
+
+/* Posiitons nav dropdrowns */
+.dropdown {
+    position: relative;
+}
+
+/* Positions nav dropdown links */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+/* Displays a block for dropdown content when dropdown link
+is hovered over */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+  
+/* Style the button that triggers the dropdown */
+.dropbtn {
+    font-size: 17px;
+    color: #868f74;
+    text-decoration: none;
+    display: block;
+
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    position: relative;
+}
+  
+/* Styles dropdown links */
+.dropdown-content a {
+    font-size: 17px;
+    color: #868f74;
+    background-color: #d4d7c4bb;
+    text-decoration: none;
+    display: block;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 10px;
+
+    position: relative;
+}
+
+/* Changes the background color of dropdown links when 
+hovered over */
+.dropdown-content a:hover {
+    background-color: #f1f1f1f2;
+}
+
+/* Styles bar animation over nav dropdown links */
+nav .dropdown-content a::before{
+    content: '';
+    display: block;
+    height: 5px;
+    width: 75%;
+    background-color: #868f74;
+
+    position: absolute;
+    top: 0;
+    width: 0;
+
+    transition: all ease-in-out 250ms;
+} 
+
+/* Shows bar animation when hovering over nav dropdown links*/
+nav .dropdown-content a:hover::before{
+    width: 75%;
+}
+  
 
 
 head{
@@ -284,3 +361,6 @@ calculator */
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 3px;
 }
+
+
+
