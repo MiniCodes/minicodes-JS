@@ -173,6 +173,7 @@ h3 {
     font-family: 'Marck Script', cursive;
     font-size: 24px;
     text-align: center;
+    color: #8394a0f1;
 }
 
 /* Styles paragraphs in general */
@@ -180,6 +181,7 @@ p {
     font-family: 'Handlee', cursive;
     text-align: center;
     font-size: 18px;
+    color: #687a86;
 }
 
 /* Styles all buttons */
