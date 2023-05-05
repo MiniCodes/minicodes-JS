@@ -289,76 +289,89 @@ inputs */
     text-align: center;
 }
 
-/* Creates & Styles the grid for the calculator
-under the button calculator */
+/* Styles the button Calculator */
 .calculator {
+    text-align: center;
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 15px;
+    font-size: 18px;
 }
 
-/* Sizes the text next to the button calculator */
-.calculator p {
-    font-size: 17px;
-}
-
-/* Creates the rows/row spacing for the button 
-calculator */
+/* Places the button calculator to the right */
 .calrows {
+    grid-column-start: 2;
+
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     row-gap: 3px;
+
+    background: #dde0cc;
+    border-radius: 16px;
+    padding: 8px;
 }
 
-/* Creates grid for row 1 of button 
-calculator */
-.calrow1 {
-    width: 40%;
+/* Styles the inputs for the button calculator buttons */
+.calrows input {
+    background: #b3c1b7da;
+    border: 1px solid #fffdf6;
+    border-radius: 16px;
+    color: #6c745f;
+}
+
+/* Creates grid for row 1 of sci. calculator*/
+.cal-row1 {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     column-gap: 3px;
 }
 
-/* Styles input to span 1 through 3 of the 
-4 spaces in the grid */
-.calrow1 input[type=text] {
+/* Styles input to span 1 through 4 of the 
+5 spaces in the grid */
+.cal-row1 #calResults {
     grid-column-start: 1;
-    grid-column-end: span 3;
+    grid-column-end: 5;
 }
 
-/* Creates grid for row 2 of button
-calculator */
-.calrow2 {
-    width: 40%;
+/* Creates grid for row 2 of sci. calculator*/
+.cal-row2 {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     column-gap: 3px;
 }
 
-/* Creates grid for row 3 of button
-calculator */
-.calrow3 {
-    width: 40%;
+/* Creates grid for row 3 of sci. calculator*/
+.cal-row3 {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     column-gap: 3px;
 }
 
-/* Creates grid for row 4 of button
-calculator */
-.calrow4 {
-    width: 40%;
+/* Creates grid for row 4 of sci. calculator*/
+.cal-row4 {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     column-gap: 3px;
 }
 
-/* Creates grid for row 5 of button
-calculator */
-.calrow5 {
-    width: 40%;
+/* Creates grid for row 5 of sci. calculator*/
+.cal-row5 {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 3px;
+}
+
+/* Creates grid for row 6 of sci. calculator*/
+.cal-row6 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 3px;
+}
+
+/* Creates grid for row 7 of sci. calculator*/
+.cal-row7 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     column-gap: 3px;
 }
 
